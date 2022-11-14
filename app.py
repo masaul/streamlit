@@ -12,6 +12,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split
 from sklearn import model_selection
 
+
 st.title('Aplikasi Data Mining - Klasifikasi Kredit Score Menggunakan Algoritma Naive Bayes Gaussian')
 st.write("Dataset Yang digunakan adalah **Kredit Score** dari [Github saya](https://raw.githubusercontent.com/masaul/data-csv/main/credit_score)")
 st.write("Nama: Muhammad Aulia Faqihuddin | NIM : 200411100027")
@@ -122,6 +123,7 @@ st.code(prediksiModel)
 result = loaded_model.score(X_test, y_test)
 st.subheader("Akurasi dari model yang di inputkan")
 st.write(result)
+
 
 # apply the whole pipeline to data
 # dataArray = [0, 1, 1, 0, 1, 0, 0, 0.582609, 0.333333, 0.333333]
